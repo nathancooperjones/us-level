@@ -1,4 +1,12 @@
 # Map Levels
+
+**Nate Edit**: I don't agree with the original scale, so I added in the `"Visited & Stayed"` option :)
+
+-----
+
+
+**ORIGINAL `README.md` BELOW**
+
 Mark your footprint using these simple apps
 
 US: https://tenpages.github.io/us-level/us.html
@@ -19,7 +27,7 @@ Tap and mark countries, states or terretories you've been to. Tap "Save Image" t
 
 ## Diary
 
-There is a short post related to this project in my 
+There is a short post related to this project in my
 [blog](https://tenpages.github.io/dev/2022/10/24/level/).
 
 ## Disclaimer
@@ -28,7 +36,7 @@ Countries potrayed in the maps are highly abstracted. Only major parts of countr
 
 ## Fonts and settings
 
-`html/slice.woff` is built from Noto Sans by Google Fonts. 
+`html/slice.woff` is built from Noto Sans by Google Fonts.
 
 `generate-font-slice.js` contains legacy files and configs from `china-ex` repository.
 

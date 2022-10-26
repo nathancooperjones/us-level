@@ -10,12 +10,13 @@ const 获取元素方位 = 元素 => 元素.getBoundingClientRect();
 const messages = {
     English: {
         message: {
-            data_level_5: 'Lived Here',
-            data_level_4: 'Stayed Here',
-            data_level_3: 'Visited Here',
+            data_level_6: 'Lived Here',
+            data_level_5: 'Visited & Stayed',
+            data_level_4: 'Visited Here',
+            data_level_3: 'Just Spent a Night',
             data_level_2: 'Stopped Here',
-            data_level_1: 'Passed Here',
-            data_level_0_alt: 'Want to be Here',
+            data_level_1: 'Passed Through Here',
+            data_level_0_alt: 'Want to Go to There',
             data_level_0: 'Never Been Here',
             pt: 'pt | pts',
         },
@@ -337,7 +338,7 @@ const 设置等级样式 = 设置等级.style;
 const 最小间距 = 6;
 添加事件监控(图形,'click', e=>{
     e.stopPropagation();
-    
+
     const { target: 省元素 } = e;
     const 省元素方位 = 获取元素方位(省元素);
     const { id } = 省元素;
@@ -347,7 +348,7 @@ const 最小间距 = 6;
     设置等级标题.innerHTML = messages[Lang.textContent].country_name[id];
     设置等级样式.display = 'block';
     const 设置等级元素方位 = 获取元素方位(设置等级);
-    
+
     let 左 = Math.round(省元素方位.left + 省元素方位.width/2 - 设置等级元素方位.width/2);
     左 = Math.min(
         左,
@@ -375,7 +376,7 @@ const 最小间距 = 6;
 const 计分 = _=>{
     const 分 = 获取所有省等级们().reduce((全, 当前) => {
         return +全 + 当前;
-      }, 0);
+    }, 0);
     Total.innerHTML = `US Level ${分}`;
     webtitle.innerHTML = `US Level ${分}`;
 }
@@ -411,7 +412,7 @@ const 设置语言样式 = Set_Lang.style;
             child.style.background = "#fff";
         }
     }
-    
+
     let 左 = Math.round(按钮方位.left + 按钮方位.width/2 - 设置语言方位.width/2);
     左 = Math.min(
         左,
