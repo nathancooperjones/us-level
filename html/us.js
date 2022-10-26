@@ -299,9 +299,10 @@ const app1 = Vue.createApp().use(i18n).mount("#Layer_4")
 const app2 = Vue.createApp().use(i18n).mount("#设置等级")
 const app3 = Vue.createApp().use(i18n).mount("#Texts")
 
-const 颜色 = ['#F9CDC7', '#C5F9CB', '#CDE8F4', '#FDE8C4', '#D0DCD7', '#E1CEF5', '#D6D6D6'];
-const 颜色_randomizer = Math.floor(Math.random() * 7);
-如何做爱元素.style.backgroundColor = 颜色[颜色_randomizer]
+// const 颜色 = ['#F9CDC7', '#C5F9CB', '#CDE8F4', '#FDE8C4', '#D0DCD7', '#E1CEF5', '#D6D6D6'];
+// const 颜色_randomizer = Math.floor(Math.random() * 7);
+// fix this to a nice "light blue ocean" color
+如何做爱元素.style.backgroundColor = '#C3F4FE'
 添加事件监控(如何做爱元素,'click',e=>{
     if (e.target == 文档.body) {
         const 颜色a = Math.floor(Math.random() * 50) + 176;
@@ -377,8 +378,8 @@ const 计分 = _=>{
     const 分 = 获取所有省等级们().reduce((全, 当前) => {
         return +全 + 当前;
     }, 0);
-    Total.innerHTML = `US Level ${分}`;
-    webtitle.innerHTML = `US Level ${分}`;
+    Total.innerHTML = `US Level: ${分}`;
+    webtitle.innerHTML = `US Level: ${分}`;
 }
 添加事件监控(设置等级,'click',e=>{
     e.stopPropagation();
