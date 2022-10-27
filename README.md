@@ -2,6 +2,8 @@
 
 **Nate Edit**: I don't agree with the original scale, so I added in the `"Visited & Stayed"` option :)
 
+This work is deployed on my site [here](https://nathancooperjones.com/us-level/html/us.html)! 
+
 -----
 
 
